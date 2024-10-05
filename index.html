@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management for Farmers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Disaster Management Dashboard</h1>
+        
+        <!-- Buzzer Button -->
+        <button id="buzzerBtn" class="buzzer">   Press in Case of Emergency</button>
+        
+        <!-- Infographics Section -->
+        <section id="infographics">
+            <h2> Disaster Infographics</h2>
+            <div id="disasterInfographics"></div>
+        </section>
+
+        <!-- Disaster Prediction Section -->
+        <section id="predictions">
+            <h2>Disaster Predictions</h2>
+            <canvas id="predictionChart"></canvas>
+        </section>
+    </div>
+
+    <!-- Modal for Description Display -->
+    <div id="descriptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Disaster Description</h2>
+            <div id="descriptionText"></div>
+        </div>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NASA Disaster Map</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 10;
+                height: 100%;
+            }
+            iframe {
+                width: 100%;
+                height: 80%;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="https://arcg.is/W5jmb" title="NASA Disaster Map">
+            Your browser does not support iframes.
+        </iframe>
+    </body>
+    
+</body>
+</html>
